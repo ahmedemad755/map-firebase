@@ -18,7 +18,7 @@ class PhoneAuthCubit extends Cubit<PhoneAuthState> {
     emit(PhoneAuthLoading());
     try {
       await firebaseAuth.verifyPhoneNumber(
-        phoneNumber: phoneNumber,
+        phoneNumber: '+2$phoneNumber',
         timeout: const Duration(seconds: 60),
         verificationCompleted: (PhoneAuthCredential credential) async {
           await firebaseAuth.signInWithCredential(credential);

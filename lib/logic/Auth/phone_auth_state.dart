@@ -17,12 +17,12 @@ final class PhoneAuthCodeSent extends PhoneAuthState {
 final class PhoneAuthCodeVerified extends PhoneAuthState {
   final String verificationId;
   PhoneAuthCodeVerified(this.verificationId);
-} 
+}
 
 final class PhoneAuthCodeFailed extends PhoneAuthState {
   final String verificationId;
   PhoneAuthCodeFailed(this.verificationId);
-} 
+}
 
 final class PhoneAuthFailure extends PhoneAuthState {
   final String message;
